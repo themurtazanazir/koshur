@@ -81,7 +81,7 @@ if __name__ == "__main__":
     missing_chars.remove("\n")
     print(f"{missing_chars = }")
 
-    dataset_base_path = f"dataset/{os.path.basename(font_path).split(".")[0]}/"
+    dataset_base_path = f"dataset/{os.path.basename(font_path).split('.')[0]}/"
     os.makedirs(dataset_base_path)
     os.makedirs(os.path.join(dataset_base_path, "images"))
     os.makedirs(
