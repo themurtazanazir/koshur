@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
         images_text = draw_text(text, font_path)
         for page_no, (img, page_text) in enumerate(images_text):
-            file_name = f"{os.path.basename(file).split(".")[0]}_{page_no}"
+            file_name = f"{os.path.basename(file).split('.')[0]}_{page_no}"
             img.save(os.path.join(dataset_base_path, "images", file_name + ".png"))
             with open(
                 os.path.join(dataset_base_path, "text", file_name + ".txt"), "w"
